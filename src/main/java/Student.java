@@ -12,6 +12,12 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
+    public Student(String name, long id) {
+        this.id = id;
+        this.name = name;
+        this.grades = new ArrayList<>();
+    }
+
     public long getId() {
         return this.id;
     }
@@ -35,4 +41,6 @@ public class Student {
         }
         return sum / this.grades.size() ;
     }
+
+    public Student(){}
 }
